@@ -1,4 +1,6 @@
 ---
+import { Footer } from "../components/footer.astro";
+import { Header } from "../components/header.astro";
 ---
 
 <!doctype html>
@@ -24,6 +26,7 @@
 
 		<main>
 			<section class="bienvenida" id="inicio">
+				{{ Header }}
 				<h1>Bienvenidos a Espacio Cultural</h1>
 				<p>
 					Un lugar para crear, aprender y compartir. Descubre nuestros
@@ -78,9 +81,6 @@
 				</p>
 			</section>
 		</main>
-
-		<footer class="pie">
-			<p>&copy; 2026 Espacio Cultural. Todos los derechos reservados.</p>
-		</footer>
+		{{ Footer }}
 	</body>
 </html>

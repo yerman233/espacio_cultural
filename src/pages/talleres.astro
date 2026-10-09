@@ -1,5 +1,6 @@
 ---
-import FooterAstroComponent, { Footer } from "../components/footer.astro";
+import { Footer } from "../components/footer.astro";
+import { Header } from "../components/header.astro";
 ---
 
 <!doctype html>
@@ -12,6 +13,7 @@ import FooterAstroComponent, { Footer } from "../components/footer.astro";
     <body>
         <!-- Encabezado de la página -->
         <header>
+            {{Header}}
             <h1>Talleres</h1>
             <p>
                 Aprende nuevas habilidades y explora tu creatividad en un

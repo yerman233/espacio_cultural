@@ -1,5 +1,6 @@
 ---
-import FooterAstroComponent, { Footer } from "../components/footer.astro";
+import { Footer } from "../components/footer.astro";
+import { Header } from "../components/header.astro";
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ import FooterAstroComponent, { Footer } from "../components/footer.astro";
         <main>
             <!-- Presentación de la organización -->
             <section>
+                {{Header}}
                 <h2>¿Quiénes Somos?</h2>
                 <p>
                     Somos una organización y espacio cultural dedicado a
