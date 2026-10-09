@@ -1,69 +1,27 @@
----
 
 ---
+import Layout from "../layouts/layout.astro";
+---
 
-<!doctype html>
-<html lang="es">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Nosotros - Talleres Creativos</title>
-    </head>
-    <body>
-        <!-- Encabezado de la página -->
-        <header>
-            <nav>
-                <a href="/">inicio</a>
-                <a href="/nosotros/">nosotros</a>
-                <a href="/talleres/">talleres</a>
-            </nav>
-            <h1>Sobre Nosotros</h1>
-        </header>
-
-        <!-- Contenido principal -->
-        <main>
-            <!-- Presentación de la organización -->
-            <section>
-                <h2>¿Quiénes Somos?</h2>
-                <p>
-                    Somos una organización y espacio cultural dedicado a
-                    fomentar la creatividad, la expresión artística y el
-                    aprendizaje práctico. Contamos con un equipo de
-                    profesionales apasionados en diversas áreas artísticas que
-                    acompañan a cada estudiante en su proceso de aprendizaje.
-                </p>
-            </section>
-
-            <!-- Propósito de la organización -->
-            <section>
-                <h2>Nuestro Propósito</h2>
-                <p>
-                    Nuestro propósito es democratizar el acceso a las artes y
-                    oficios creativos, ofreciendo un entorno inspirador,
-                    inclusivo y dinámico donde las personas puedan desarrollar
-                    nuevas habilidades, descubrir sus talentos y conectar con
-                    una comunidad de entusiastas del arte.
-                </p>
-            </section>
-
-            <!-- Imagen representativa -->
-            <section>
-                <h2>Nuestra Comunidad</h2>
-                <img
-                    src="https://via.placeholder.com/600x400"
-                    alt="Integrantes de la organización y participantes en un taller creativo"
-                />
-            </section>
-        </main>
-
-        <!-- Pie de página -->
-        <footer>
-            <p>
-                Desarrollado por <a href="#"
-                    >a_geriverosa@colegiosanlorenzo.org</a
-                >
-                <a href="#">a_benjamincalderon@colegiosanlorenzo.org</a>
-            </p>
-        </footer>
-    </body>
-</html>
+<Layout titulo="Nosotros">
+  <section class="seccion nosotros">
+    <div class="nosotros__texto">
+      <h1>Sobre nosotros</h1>
+      <p>
+        Espacio Cultural es una organización dedicada a acercar el arte y la
+        creatividad a la comunidad. Nuestro propósito es ofrecer un lugar
+        abierto donde las personas puedan aprender, expresarse y compartir sus
+        ideas a través de talleres y actividades culturales.
+      </p>
+      <p>
+        Creemos que la cultura se construye en conjunto, por eso promovemos un
+        ambiente cercano, colaborativo y accesible para todas las edades.
+      </p>
+    </div>
+    <img
+      class="nosotros__imagen"
+      src="/img/nosotros.jpg"
+      alt="Espacio Cultural, nuestra comunidad creando juntos"
+    />
+  </section>
+</Layout>
