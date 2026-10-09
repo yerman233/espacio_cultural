@@ -16,22 +16,16 @@ import HeaderAstroComponent, { Header } from "../components/header.astro";
 	</head>
 	<body>
 		<header class="encabezado">
-			<a class="logo" href="#inicio">Espacio Cultural</a>
-			<nav class="menu" aria-label="Navegación principal">
-				<a href="/nosotros">Nosotros</a>
-				<a href="/talleres">Talleres</a>
-			</nav>
+			{{ Header }}
 		</header>
 
 		<main>
 			<section class="bienvenida" id="inicio">
-				{{ Header }}
 				<h1>Bienvenidos a Espacio Cultural</h1>
 				<p>
 					Un lugar para crear, aprender y compartir. Descubre nuestros
 					talleres y actividades abiertas a toda la comunidad.
 				</p>
-				<a class="boton" href="#talleres">Ver talleres</a>
 			</section>
 
 			<section class="presentacion" id="nosotros">
